@@ -1,0 +1,12 @@
+<select
+  [ngModel]="value"
+  (ngModelChange)="onSelect($event)"
+  autofocus
+>
+  <option
+    *ngFor="let item of config.data"
+    [ngValue]="item"
+  >
+    {{ item.value }}
+  </option>
+</select>
